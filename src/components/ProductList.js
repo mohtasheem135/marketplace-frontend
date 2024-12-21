@@ -51,7 +51,7 @@ const ProductList = () => {
     }
   };
 
-  if (!products.length) return <p>Loading...</p>;
+  if (!products.length) return <p className="px-[20px] md:px-[100px]">Loading...</p>;
   return (
     <div className="px-[20px] md:px-[100px] py-10">
       <div className="flex flex-wrap ">
