@@ -39,7 +39,6 @@ const ProductForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(product);
     try {
       if (id) {
         const updatedProduct = {
@@ -54,7 +53,7 @@ const ProductForm = () => {
         await productService.addProduct(product);
         alert("Product added")
       }
-      navigate("/products");
+      navigate("/");
     } catch (error) {
       console.error("Error submitting product form:", error);
     }
@@ -62,12 +61,9 @@ const ProductForm = () => {
 
   const handleDelete = async () => {
     try {
-      const response = await productService.deleteProduct(id);  // Call the API to delete the product
-      // if (response) {
-      //   onProductDeleted(product.id);  // Call the parent component's function to remove the product from the list
-      // }
+      const response = await productService.deleteProduct(id);
       alert("Deleted Successfully")
-      navigate("/products")
+      navigate("/")
     } catch (error) {
       console.error('Error deleting product:', error);
     }
