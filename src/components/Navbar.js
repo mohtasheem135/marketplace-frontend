@@ -9,13 +9,13 @@ const Navbar = () => {
     <nav className="bg-blue-400 h-[70px]">
       <ul className="flex justify-between space-x-4 items-center h-full px-[20px] md:px-[100px]">
         <div className="flex space-x-3">
-          <li>
+          <li className="border-2 py-1 px-2 rounded-md shadow-md bg-blue-900 text-white hover:bg-gray-400 hover:text-black cursor-pointer">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="border-2 py-1 px-2 rounded-md shadow-md bg-blue-900 text-white hover:bg-gray-400 hover:text-black cursor-pointer">
             <Link to="/add-product">Add Product</Link>
           </li>
-          <li>
+          <li className="border-2 py-1 px-2 rounded-md shadow-md bg-blue-900 text-white hover:bg-gray-400 hover:text-black cursor-pointer">
             <Link to="/orders-placed">Orders Placed</Link>
           </li>
         </div>
